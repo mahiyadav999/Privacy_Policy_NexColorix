@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Nex Colorix</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: rgba(22, 30, 49, 0.75);
+            --card-border: rgba(0, 229, 255, 0.2);
+            --accent-cyan: #00e5ff;
+            --accent-purple: #a855f7;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --highlight: #38bdf8;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 229, 255, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .header-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 32px 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.2), rgba(168, 85, 247, 0.2));
+            border: 1px solid var(--accent-cyan);
+            color: var(--accent-cyan);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 6px 14px;
+            border-radius: 30px;
+            margin-bottom: 16px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #ffffff, var(--accent-cyan));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .effective-date {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        .content-card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 18px;
+            padding: 28px 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(8px);
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 18px;
+            background: linear-gradient(to bottom, var(--accent-cyan), var(--accent-purple));
+            border-radius: 2px;
+        }
+
+        p {
+            margin-bottom: 14px;
+            color: var(--text-muted);
+            font-size: 15px;
+        }
+
+        p strong {
+            color: var(--text-main);
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 14px;
+        }
+
+        li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+            font-size: 14.5px;
+        }
+
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 8px;
+            color: var(--accent-cyan);
+            font-size: 18px;
+            line-height: 1;
+        }
+
+        .info-pill-box {
+            background: rgba(0, 229, 255, 0.06);
+            border-left: 3px solid var(--accent-cyan);
+            padding: 14px 16px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }
+
+        .info-pill-box p {
+            margin: 0;
+            color: #e2e8f0;
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--highlight);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-cyan);
+            text-decoration: underline;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, rgba(0, 229, 255, 0.1), rgba(168, 85, 247, 0.1));
+            border: 1px solid rgba(0, 229, 255, 0.3);
+            border-radius: 14px;
+            padding: 20px;
+            margin-top: 16px;
+            text-align: center;
+        }
+
+        .contact-box a {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            padding: 24px 0 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header-card">
+            <span class="badge">Privacy & Data Governance</span>
+            <h1>Privacy Policy for Nex Colorix</h1>
+            <p class="effective-date">Effective Date: October 3, 2026 | Application Version: 1.0</p>
+        </header>
+
+        <section class="content-card">
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>Nex Colorix</strong> ("we", "our", or "us"). We respect your privacy and are committed to protecting any personal data processed through our application.</p>
+            <p>This Privacy Policy explains how our mobile game collects, uses, and safeguards information when you play <strong>Nex Colorix</strong>. By downloading, accessing, or playing our game, you agree to the collection and use of information in accordance with this policy.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>2. Information We Do Not Collect</h2>
+            <p>Nex Colorix is designed with user privacy at its core:</p>
+            <ul>
+                <li><strong>No User Account or Registration:</strong> You do not need to create an account, log in, or provide your real name, email, or telephone number to play the game.</li>
+                <li><strong>Local Gameplay Storage:</strong> Your level progress, coin balance, unlocked themes, trophies, and audio preferences are stored exclusively on your device's local memory using modern Room SQLite database technology. We do not transmit or store your personal gameplay records on private servers.</li>
+                <li><strong>No Sensitive Personal Data:</strong> We never collect sensitive personal information such as biometric data, contacts, messages, photos, financial payment cards, or physical location coordinates.</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>3. Information Collected by Third-Party Services</h2>
+            <p>To provide high-quality free gameplay and continuous technical improvements, Nex Colorix integrates standard industry-leading SDKs, notably <strong>Google AdMob</strong> and <strong>Google Play Services</strong>. These services may collect certain device telemetry automatically:</p>
+            <ul>
+                <li><strong>Device Identifiers & Telemetry:</strong> Device model, operating system version, system language settings, screen density, and internet connection type.</li>
+                <li><strong>Google Advertising ID (AD_ID):</strong> On supported Android devices, Google AdMob uses the Google Play Services Advertising Identifier (AD_ID) to serve ads, frequency-cap impressions, and detect fraudulent or invalid clicks.</li>
+                <li><strong>Ad Interaction Statistics:</strong> Aggregated metrics such as whether an ad was displayed, clicked, or completed (for rewarded ads).</li>
+            </ul>
+
+            <div class="info-pill-box">
+                <p><strong>Note on Google Services:</strong> For detailed information on how Google manages and protects data when you use partner apps, please review <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">Google's Privacy & Terms for Partner Apps</a>.</p>
+            </div>
+        </section>
+
+        <section class="content-card">
+            <h2>4. Third-Party Partners & Links</h2>
+            <p>Our application utilizes third-party libraries that may collect information used to identify you:</p>
+            <ul>
+                <li><strong>Google Play Services:</strong> Core Android system runtime services. (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
+                <li><strong>Google AdMob:</strong> Mobile ad serving platform. (<a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">AdMob Privacy Policies</a>)</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>5. Device Permissions Explained</h2>
+            <p>Nex Colorix requests only the minimum necessary permissions required for smooth functioning:</p>
+            <ul>
+                <li><strong>INTERNET:</strong> Required to request and display advertisements and verify Google Play connectivity.</li>
+                <li><strong>ACCESS_NETWORK_STATE & ACCESS_WIFI_STATE:</strong> Allows the app to detect whether an active internet connection is available before attempting to load ads.</li>
+                <li><strong>VIBRATE:</strong> Used solely to provide subtle, tactile haptic feedback during liquid pouring and tube selection. This can be toggled on or off at any time in the Settings menu.</li>
+                <li><strong>com.google.android.gms.permission.AD_ID:</strong> Declared in compliance with Google Play Developer Policy for Android 13+ devices to enable standard ad fraud prevention and ad measurement.</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>6. Your Privacy Rights & Opt-Out Choices</h2>
+            <p>You have full control over your advertising identifier and data sharing:</p>
+            <ul>
+                <li><strong>Reset or Delete Advertising ID:</strong> On your Android device, navigate to <em>Settings &gt; Google &gt; Ads</em> (or <em>Privacy &gt; Ads</em>). You can reset your Advertising ID or choose "Delete advertising ID" at any time.</li>
+                <li><strong>Opt Out of Personalized Advertising:</strong> In your device's Google Ads settings, you can enable "Opt out of Ads Personalization". When enabled, ads will still be shown, but they will be contextual rather than based on your interests.</li>
+                <li><strong>Reset Game Data:</strong> You can completely erase all local level progress, coins, and saved preferences at any time directly through the in-game Settings screen by tapping "Reset All Progress".</li>
+            </ul>
+        </section>
+
+        <section class="content-card">
+            <h2>7. Children's Privacy (COPPA Compliance)</h2>
+            <p>Nex Colorix is designed as a family-friendly casual puzzle game. We do not knowingly collect personal identifiable information from children under the age of 13 (or under 16 in the European Economic Area). If you are a parent or guardian and believe that your child has provided us with personal information, please contact us immediately, and we will take prompt corrective action.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>8. Data Security</h2>
+            <p>We value your trust. We implement standard security safeguards and utilize Google's hardened infrastructure to protect device communications. However, please remember that no method of transmission over the internet or electronic storage is 100% secure.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>9. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy periodically to reflect new game features, legal updates, or service changes. Any updates will be posted to this page with an updated Effective Date. We encourage you to review this policy periodically.</p>
+        </section>
+
+        <section class="content-card">
+            <h2>10. Contact Us</h2>
+            <p>If you have any questions, feedback, or data privacy requests regarding Nex Colorix, please reach out to our dedicated support team:</p>
+            <div class="contact-box">
+                <p><strong>Nex Colorix Support & Privacy Team</strong></p>
+                <a href="mailto:mahiyadav999@gmail.com">mahiyadav999@gmail.com</a>
+                <p style="margin-top: 8px; font-size: 13px;">Package ID: com.mahender.NexColorix.Colorsort3d.puzzle</p>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Nex Colorix. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
